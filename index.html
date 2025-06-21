@@ -11,165 +11,138 @@
 <body>
     <div class="container">
         <h1>Appreciation Week: Vote & Suggest</h1>
-        <form>
+        <form name="appreciation" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="appreciation" />
 
             <!-- Monday -->
             <div class="day-section">
                 <h2>Monday – Middle Eastern Day</h2>
-                <label for="monday-meal">Choose your meal:</label>
-                <select id="monday-meal">
+                <label>Choose your meal:</label>
+                <select name="monday-meal">
                     <option>Chicken Shawarma</option>
                     <option>Falafel with Hummus</option>
                     <option>Beef Kofta</option>
-                    <option>Something else (write below)</option>
+                    <option>Other (write below)</option>
                 </select>
-                <textarea class="custom-input" placeholder="Other meal idea for Monday"></textarea>
-                <label for="monday-activity">Choose activity:</label>
-                <select id="monday-activity">
-                    <option>🎯 Team Trivia Quiz — Answer fun questions in teams</option>
-                    <option>🎤 Karaoke Battle — Sing solo or as a team, vote for the winner</option>
-                    <option>🤹‍♂️ Charades — Act out a word without speaking, team guesses</option>
-                    <option>🎨 Pictionary — Draw a word, your team tries to guess it</option>
-                    <option>⏱ Minute to Win It — Short, silly physical challenges</option>
-                    <option>Something else (write below)</option>
+                <textarea name="monday-meal-other" placeholder="Other meal idea for Monday"></textarea>
+
+                <label>Choose activity:</label>
+                <select name="monday-activity">
+                    <option>Team Trivia Quiz</option>
+                    <option>Karaoke Battle</option>
+                    <option>Charades</option>
+                    <option>Pictionary</option>
+                    <option>Minute to Win It</option>
+                    <option>Other (write below)</option>
                 </select>
-                <textarea class="custom-input" placeholder="Other activity for Monday"></textarea>
+                <textarea name="monday-activity-other" placeholder="Other activity for Monday"></textarea>
             </div>
 
             <!-- Tuesday -->
             <div class="day-section">
                 <h2>Tuesday – Asian Day</h2>
-                <label for="tuesday-meal">Choose your meal:</label>
-                <select id="tuesday-meal">
+                <label>Choose your meal:</label>
+                <select name="tuesday-meal">
                     <option>Vegetarian Sushi</option>
                     <option>Chicken Teriyaki</option>
                     <option>Tofu Stir-fry</option>
-                    <option>Something else (write below)</option>
+                    <option>Other (write below)</option>
                 </select>
-                <textarea class="custom-input" placeholder="Other meal idea for Tuesday"></textarea>
-                <label for="tuesday-activity">Choose activity:</label>
-                <select id="tuesday-activity">
-                    <option>🎯 Team Trivia Quiz — Answer fun questions in teams</option>
-                    <option>🎤 Karaoke Battle — Sing solo or as a team, vote for the winner</option>
-                    <option>🤹‍♂️ Charades — Act out a word without speaking, team guesses</option>
-                    <option>🎨 Pictionary — Draw a word, your team tries to guess it</option>
-                    <option>⏱ Minute to Win It — Short, silly physical challenges</option>
-                    <option>Something else (write below)</option>
+                <textarea name="tuesday-meal-other" placeholder="Other meal idea for Tuesday"></textarea>
+
+                <label>Choose activity:</label>
+                <select name="tuesday-activity">
+                    <option>Team Trivia Quiz</option>
+                    <option>Karaoke Battle</option>
+                    <option>Charades</option>
+                    <option>Pictionary</option>
+                    <option>Minute to Win It</option>
+                    <option>Other (write below)</option>
                 </select>
-                <textarea class="custom-input" placeholder="Other activity for Tuesday"></textarea>
+                <textarea name="tuesday-activity-other" placeholder="Other activity for Tuesday"></textarea>
             </div>
 
             <!-- Wednesday -->
             <div class="day-section">
                 <h2>Wednesday – Indian Day</h2>
-                <label for="wednesday-meal">Choose your meal:</label>
-                <select id="wednesday-meal">
+                <label>Choose your meal:</label>
+                <select name="wednesday-meal">
                     <option>Butter Chicken</option>
                     <option>Chickpea Curry</option>
                     <option>Lamb Biryani</option>
-                    <option>Something else (write below)</option>
+                    <option>Other (write below)</option>
                 </select>
-                <textarea class="custom-input" placeholder="Other meal idea for Wednesday"></textarea>
-                <label for="wednesday-activity">Choose activity:</label>
-                <select id="wednesday-activity">
-                    <option>🎯 Team Trivia Quiz — Answer fun questions in teams</option>
-                    <option>🎤 Karaoke Battle — Sing solo or as a team, vote for the winner</option>
-                    <option>🤹‍♂️ Charades — Act out a word without speaking, team guesses</option>
-                    <option>🎨 Pictionary — Draw a word, your team tries to guess it</option>
-                    <option>⏱ Minute to Win It — Short, silly physical challenges</option>
-                    <option>Something else (write below)</option>
+                <textarea name="wednesday-meal-other" placeholder="Other meal idea for Wednesday"></textarea>
+
+                <label>Choose activity:</label>
+                <select name="wednesday-activity">
+                    <option>Team Trivia Quiz</option>
+                    <option>Karaoke Battle</option>
+                    <option>Charades</option>
+                    <option>Pictionary</option>
+                    <option>Minute to Win It</option>
+                    <option>Other (write below)</option>
                 </select>
-                <textarea class="custom-input" placeholder="Other activity for Wednesday"></textarea>
+                <textarea name="wednesday-activity-other" placeholder="Other activity for Wednesday"></textarea>
             </div>
 
             <!-- Thursday -->
             <div class="day-section">
                 <h2>Thursday – Korean Day</h2>
-                <label for="thursday-meal">Choose your meal:</label>
-                <select id="thursday-meal">
-                    <option>Korean Bibimbap</option>
-                    <option>Japchae (Glass Noodles)</option>
+                <label>Choose your meal:</label>
+                <select name="thursday-meal">
+                    <option>Bibimbap</option>
+                    <option>Japchae</option>
                     <option>Vegetable Pancakes</option>
-                    <option>Something else (write below)</option>
+                    <option>Other (write below)</option>
                 </select>
-                <textarea class="custom-input" placeholder="Other meal idea for Thursday"></textarea>
-                <label for="thursday-activity">Choose activity:</label>
-                <select id="thursday-activity">
-                    <option>🎯 Team Trivia Quiz — Answer fun questions in teams</option>
-                    <option>🎤 Karaoke Battle — Sing solo or as a team, vote for the winner</option>
-                    <option>🤹‍♂️ Charades — Act out a word without speaking, team guesses</option>
-                    <option>🎨 Pictionary — Draw a word, your team tries to guess it</option>
-                    <option>⏱ Minute to Win It — Short, silly physical challenges</option>
-                    <option>Something else (write below)</option>
+                <textarea name="thursday-meal-other" placeholder="Other meal idea for Thursday"></textarea>
+
+                <label>Choose activity:</label>
+                <select name="thursday-activity">
+                    <option>Team Trivia Quiz</option>
+                    <option>Karaoke Battle</option>
+                    <option>Charades</option>
+                    <option>Pictionary</option>
+                    <option>Minute to Win It</option>
+                    <option>Other (write below)</option>
                 </select>
-                <textarea class="custom-input" placeholder="Other activity for Thursday"></textarea>
+                <textarea name="thursday-activity-other" placeholder="Other activity for Thursday"></textarea>
             </div>
 
             <!-- Friday -->
             <div class="day-section">
                 <h2>Friday – North American Day</h2>
-                <label for="friday-meal">Choose your meal:</label>
-                <select id="friday-meal">
-                    <option>Pizza (Halal + Veg options)</option>
+                <label>Choose your meal:</label>
+                <select name="friday-meal">
+                    <option>Pizza</option>
                     <option>Caesar Salad with Chicken</option>
                     <option>Vegan Wraps</option>
-                    <option>Something else (write below)</option>
+                    <option>Other (write below)</option>
                 </select>
-                <textarea class="custom-input" placeholder="Other meal idea for Friday"></textarea>
-                <label for="friday-activity">Choose activity:</label>
-                <select id="friday-activity">
-                    <option>🎯 Team Trivia Quiz — Answer fun questions in teams</option>
-                    <option>🎤 Karaoke Battle — Sing solo or as a team, vote for the winner</option>
-                    <option>🤹‍♂️ Charades — Act out a word without speaking, team guesses</option>
-                    <option>🎨 Pictionary — Draw a word, your team tries to guess it</option>
-                    <option>⏱ Minute to Win It — Short, silly physical challenges</option>
-                    <option>Something else (write below)</option>
+                <textarea name="friday-meal-other" placeholder="Other meal idea for Friday"></textarea>
+
+                <label>Choose activity:</label>
+                <select name="friday-activity">
+                    <option>Team Trivia Quiz</option>
+                    <option>Karaoke Battle</option>
+                    <option>Charades</option>
+                    <option>Pictionary</option>
+                    <option>Minute to Win It</option>
+                    <option>Other (write below)</option>
                 </select>
-                <textarea class="custom-input" placeholder="Other activity for Friday"></textarea>
+                <textarea name="friday-activity-other" placeholder="Other activity for Friday"></textarea>
             </div>
 
-            <!-- Suggestions -->
+            <!-- General Suggestions -->
             <div class="day-section">
-                <label for="suggestions">Your ideas (food or activities):</label>
-                <textarea class="suggestion-box" id="suggestions" placeholder="Write here..."></textarea>
+                <label>Your ideas (food or activities):</label>
+                <textarea name="suggestions" placeholder="Write here..."></textarea>
             </div>
 
             <button type="submit" class="submit-btn">Submit</button>
         </form>
     </div>
-
-    <script>
-        document.querySelector("form").addEventListener("submit", function (e) {
-            e.preventDefault();
-
-            const payload = {
-                day: "Monday", // Статично, можно сделать динамическим
-                meal: document.getElementById("monday-meal").value,
-                mealOther: document.querySelector("textarea[placeholder*='Other meal idea for Monday']").value,
-                activity: document.getElementById("monday-activity").value,
-                activityOther: document.querySelector("textarea[placeholder*='Other activity for Monday']").value,
-                suggestions: document.getElementById("suggestions").value,
-            };
-
-            fetch("https://script.google.com/macros/library/d/1I6CurmiswgqG91WNnCAoovVR7VO-jivXjLfnQjPROtH_FJWSeaYZOGdj/1", {
-                method: "POST",
-                body: JSON.stringify(payload),
-                headers: {
-                    "Content-Type": "application/json"
-                }
-            })
-                .then(res => res.text())
-                .then(data => {
-                    alert("Your response has been submitted. Thank you!");
-                })
-                .catch(err => {
-                    alert("Submission failed. Please try again.");
-                    console.error(err);
-                });
-        });
-    </script>
-
-
 </body>
 
 </html>
