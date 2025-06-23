@@ -7,75 +7,18 @@
     <title>Appreciation Week Voting</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Appreciation Week Voting</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
 
 <body>
     <div class="container">
         <h1>Appreciation Week: Vote & Suggest</h1>
 
-        <form name="appreciation" method="POST" data-netlify="true" netlify action="/thank-you.html">
-            <input type="hidden" name="form-name" value="appreciation">
-            <p hidden>
-                <label>Don’t fill this out: <input name="bot-field"></label>
-            </p>
+        <form action="https://formsubmit.co/valentinamodyrka1@gmail.com" method="POST">
+            <!-- Hidden fields -->
+            <input type="hidden" name="_next" value="https://mova-ops.github.io/appreciation-week/thank-you.html">
+            <input type="hidden" name="_captcha" value="false">
 
-            <!-- Monday -->
-            <div class="day-section">
-                <h2>Monday – Middle Eastern Day</h2>
-                <label>Choose your meal:</label>
-                <select name="monday-meal">
-                    <option>Chicken Shawarma</option>
-                    <option>Falafel with Hummus</option>
-                    <option>Beef Kofta</option>
-                    <option>Other (write below)</option>
-                </select>
-                <textarea name="monday-meal-other" placeholder="Other meal idea for Monday"></textarea>
-
-                <label>Choose activity:</label>
-                <select name="monday-activity">
-                    <option>🎯 Team Trivia Quiz</option>
-                    <option>🎤 Karaoke Battle</option>
-                    <option>🧙‍♂️ Charades</option>
-                    <option>🎨 Pictionary</option>
-                    <option>⏱ Minute to Win It</option>
-                    <option>Other (write below)</option>
-                </select>
-                <textarea name="monday-activity-other" placeholder="Other activity for Monday"></textarea>
-            </div>
-
-            <!-- Suggestions -->
-            <div class="day-section">
-                <label>Your ideas (food or activities):</label>
-                <textarea name="suggestions" placeholder="Write here..."></textarea>
-            </div>
-
-            <button type="submit">Submit</button>
-        </form>
-    </div>
-</body>
-
-</html>
-
-
-<body>
-    <div class="container">
-        <h1>Appreciation Week: Vote & Suggest</h1>
-
-        <form name="appreciation" method="POST" data-netlify="true" netlify>
-            <!-- 💡 Netlify Hidden Input -->
-            <input type="hidden" name="form-name" value="appreciation" />
-            <!-- 🛡️ Anti-spam -->
-            <p style="display:none">
-                <label>Don’t fill this out: <input name="bot-field" /></label>
-            </p>
+            <!-- Anti-bot -->
+            <input type="text" name="_honey" style="display:none">
 
             <!-- Monday -->
             <div class="day-section">
