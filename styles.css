@@ -24,7 +24,9 @@ h1 {
 h2 {
   color: #0066cc;
   margin-top: 40px;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 label {
@@ -55,6 +57,7 @@ a {
   display: inline-block;
   margin-top: 5px;
   margin-bottom: 15px;
+  word-break: break-word;
 }
 
 a:hover {
@@ -82,14 +85,9 @@ button[type="submit"]:hover {
   border-bottom: 1px solid #ddd;
 }
 
-/* Responsive layout */
 @media (max-width: 600px) {
-  body {
-    padding: 10px;
-  }
-
   .container {
-    padding: 20px;
+    padding: 15px;
   }
 
   h1 {
@@ -97,7 +95,7 @@ button[type="submit"]:hover {
   }
 
   h2 {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   button[type="submit"] {
