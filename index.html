@@ -11,8 +11,14 @@
 <body>
     <div class="container">
         <h1>Appreciation Week: Vote & Suggest</h1>
-        <form name="appreciation" method="POST" data-netlify="true">
+
+        <form name="appreciation" method="POST" data-netlify="true" netlify>
+            <!-- 💡 Netlify Hidden Input -->
             <input type="hidden" name="form-name" value="appreciation" />
+            <!-- 🛡️ Anti-spam -->
+            <p style="display:none">
+                <label>Don’t fill this out: <input name="bot-field" /></label>
+            </p>
 
             <!-- Monday -->
             <div class="day-section">
