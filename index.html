@@ -13,41 +13,81 @@
         <h1>Appreciation Week: Vote & Suggest</h1>
 
         <form action="https://formsubmit.co/0a90053d2670134ee3bafd70db192034" method="POST">
-            <!-- Hidden fields -->
             <input type="hidden" name="_next" value="https://mova-ops.github.io/appreciation-week/thank-you.html">
             <input type="hidden" name="_captcha" value="false">
-
-            <!-- Anti-bot -->
             <input type="text" name="_honey" style="display:none">
 
-            <!-- Monday -->
+            <!-- Days -->
             <div class="day-section">
                 <h2>Monday – Middle Eastern Day</h2>
-                <label>Choose your meal:</label>
-                <select name="monday-meal">
-                    <option>Chicken Shawarma</option>
-                    <option>Falafel with Hummus</option>
-                    <option>Beef Kofta</option>
-                    <option>Other (write below)</option>
-                </select>
-                <textarea name="monday-meal-other" placeholder="Other meal idea for Monday"></textarea>
+                <p>Enjoy the flavors of the Middle East! Choose your own favorite meal.</p>
+                <label>Your Name:</label>
+                <input type="text" name="monday-name" required>
+                <p>Pick your meal at <a href="https://skipthedishes.com" target="_blank">SkipTheDishes</a> and enter it
+                    below:</p>
+                <input type="text" name="monday-meal" placeholder="Your chosen meal">
+                <label>Activity + Description:</label>
+                <input type="text" name="monday-activity" placeholder="e.g. Karaoke">
+                <textarea name="monday-activity-desc" placeholder="Short description of the activity"></textarea>
+            </div>
 
-                <label>Choose activity:</label>
-                <select name="monday-activity">
-                    <option>🎯 Team Trivia Quiz</option>
-                    <option>🎤 Karaoke Battle</option>
-                    <option>🧙‍♂️ Charades</option>
-                    <option>🎨 Pictionary</option>
-                    <option>⏱ Minute to Win It</option>
-                    <option>Other (write below)</option>
-                </select>
-                <textarea name="monday-activity-other" placeholder="Other activity for Monday"></textarea>
+            <div class="day-section">
+                <h2>Tuesday – Asian Day</h2>
+                <p>Celebrate the diversity of Asian cuisines and culture!</p>
+                <label>Your Name:</label>
+                <input type="text" name="tuesday-name" required>
+                <p>Pick your meal at <a href="https://ubereats.com" target="_blank">Uber Eats</a> and enter it below:
+                </p>
+                <input type="text" name="tuesday-meal" placeholder="Your chosen meal">
+                <label>Activity + Description:</label>
+                <input type="text" name="tuesday-activity" placeholder="e.g. Trivia">
+                <textarea name="tuesday-activity-desc" placeholder="Short description of the activity"></textarea>
+            </div>
+
+            <div class="day-section">
+                <h2>Wednesday – Indian Day</h2>
+                <p>Spice up the week with rich Indian dishes and fun!</p>
+                <label>Your Name:</label>
+                <input type="text" name="wednesday-name" required>
+                <p>Pick your meal at <a href="https://doordash.com" target="_blank">DoorDash</a> and enter it below:</p>
+                <input type="text" name="wednesday-meal" placeholder="Your chosen meal">
+                <label>Activity + Description:</label>
+                <input type="text" name="wednesday-activity" placeholder="e.g. Pictionary">
+                <textarea name="wednesday-activity-desc" placeholder="Short description of the activity"></textarea>
+            </div>
+
+            <div class="day-section">
+                <h2>Thursday – Korean Day</h2>
+                <p>Modern and traditional Korean dishes — what’s your pick?</p>
+                <label>Your Name:</label>
+                <input type="text" name="thursday-name" required>
+                <p>Pick your meal at <a href="https://fantuan.ca" target="_blank">Fantuan</a> and enter it below:</p>
+                <input type="text" name="thursday-meal" placeholder="Your chosen meal">
+                <label>Activity + Description:</label>
+                <input type="text" name="thursday-activity" placeholder="e.g. Charades">
+                <textarea name="thursday-activity-desc" placeholder="Short description of the activity"></textarea>
+            </div>
+
+            <div class="day-section">
+                <h2>Friday – North American Day</h2>
+                <p>Wrap up the week with some classic comfort food!</p>
+                <label>Your Name:</label>
+                <input type="text" name="friday-name" required>
+                <p>Pick your meal at <a href="https://skipthedishes.com" target="_blank">SkipTheDishes</a> and enter it
+                    below:</p>
+                <input type="text" name="friday-meal" placeholder="Your chosen meal">
+                <label>Activity + Description:</label>
+                <input type="text" name="friday-activity" placeholder="e.g. Minute to Win It">
+                <textarea name="friday-activity-desc" placeholder="Short description of the activity"></textarea>
             </div>
 
             <!-- Suggestions -->
             <div class="day-section">
-                <label>Your ideas (food or activities):</label>
-                <textarea name="suggestions" placeholder="Write here..."></textarea>
+                <h2>Suggestions</h2>
+                <label>Your Name:</label>
+                <input type="text" name="suggestion-name" required>
+                <label>Your Suggestion:</label>
+                <textarea name="suggestion-content" placeholder="Any other ideas or feedback"></textarea>
             </div>
 
             <button type="submit">Submit</button>
